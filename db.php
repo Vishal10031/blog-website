@@ -1,8 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","blog_admin_db");
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
- ?>
+	$database_username = 'root';//user name
+	$database_password = '';//password
+	$pdo_conn = new PDO( 'mysql:host=localhost;dbname=blog_admin_db', $database_username, $database_password );
+?>
